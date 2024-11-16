@@ -23,3 +23,12 @@ The **Baseer** device translates stereo vision from a camera into stereo sound t
 - `/tests`: Testing scripts and reports.
 - `/images`: Images, videos, and other media assets.
 - `/designs`: Mockups and design files for UI/UX.
+
+## Team Members
+
+| Name            | Student ID  |
+|-----------------|-------------|
+| Ahmed Farid     | 202000625   | 
+| Yasmeen Abosaif | 202001116   |
+| Wessam Zaid     | 202001732   | 
+| Hala Mohammed   | 202100987   |
