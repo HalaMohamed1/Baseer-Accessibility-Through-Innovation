@@ -650,7 +650,33 @@ body {
   #BANNER
 \*-----------------------------------*/
 
+.banner-list {
+  display: grid;
+  gap: 30px;
+}
 
+.banner-card {
+  min-height: 420px;
+  padding: 30px;
+}
+
+.banner-card .card-subtitle {
+  color: var(--black);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.banner-card :is(.card-subtitle, .card-title) { text-shadow: 0 0 2px var(--cultured-2); }
+
+.banner-card-1 .card-title { margin-block: 10px 30px; }
+
+.banner-card .card-text {
+  color: var(--black);
+  font-size: var(--fs-7);
+  margin-block: 10px 25px;
+}
 
 
 
