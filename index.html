@@ -22,7 +22,12 @@
 
     <!-- 
         - Preload images
+        
     -->
+    <link rel="preload" as="image" href="./assets/images/logo.png">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.png">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.png">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-3.png">
 
 
 </head>
@@ -170,7 +175,7 @@
           <ul class="has-scrollbar">
 
             <li class="scrollbar-item">
-              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-1.jpg')">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-1.png')">
 
                 <div class="card-content">
 
@@ -194,7 +199,7 @@
 
             
             <li class="scrollbar-item">
-                <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-2.jpg')">
+                <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-2.png')">
   
                   <div class="card-content">
   
@@ -217,7 +222,7 @@
               </li>
 
               <li class="scrollbar-item">
-                <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-3.jpg')">
+                <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-3.png')">
   
                   <div class="card-content">
   
@@ -245,8 +250,212 @@
     </section>
   
   
+          <!-- 
+               - #COLLECTION
+          -->
 
+<section class="section collection" id="collection" aria-label="collection" data-section>
+  <div class="container">
 
+    <ul class="collection-list">
+
+      <li>
+        <div class="collection-card has-before hover:shine">
+
+          <h2 class="h2 card-title">Accessible Essentials</h2>
+
+          <p class="card-text">Affordable tools for everyday accessibility needs</p>
+
+          <a href="#" class="btn-link">
+            <span class="span">Explore Now</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+          <div class="has-bg-image" style="background-image: url('./assets/images/collection-1.png')"></div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="collection-card has-before hover:shine">
+
+          <h2 class="h2 card-title">AI Navigation</h2>
+
+          <p class="card-text">Innovative solutions with AI-powered guidance</p>
+
+          <a href="#" class="btn-link">
+            <span class="span">Discover More</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+          <div class="has-bg-image" style="background-image: url('./assets/images/collection-2.png')"></div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="collection-card has-before hover:shine">
+
+          <h2 class="h2 card-title">Premium Accessibility</h2>
+
+          <p class="card-text">High-end features for advanced accessibility needs</p>
+
+          <a href="#" class="btn-link">
+            <span class="span">Shop Now</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+          <div class="has-bg-image" style="background-image: url('./assets/images/collection-3.png')"></div>
+
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+   <!-- 
+        - Shop Section
+    -->
+
+    <section class="section shop" id="shop" aria-label="shop" data-section>
+      <div class="container">
+    
+        <div class="title-wrapper">
+          <h2 class="h2 section-title">Our Bestsellers</h2>
+    
+          <a href="#" class="btn-link">
+            <span class="span">Shop All Products</span>
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+        </div>
+    
+        <ul class="has-scrollbar">
+    
+          <li class="scrollbar-item">
+            <div class="shop-card">
+              <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                <img src="./assets/images/glasses-01.png" width="540" height="720" loading="lazy" alt="Classic Glasses" class="img-cover">
+                <span class="badge" aria-label="20% off">-20%</span>
+                <div class="card-actions">
+                  <button class="action-btn" aria-label="add to cart">
+                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                  <button class="action-btn" aria-label="add to wishlist">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                  <button class="action-btn" aria-label="compare">
+                    <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+              </div>
+    
+              <div class="card-content">
+                <div class="price">
+                  <del class="del">$375.00</del>
+                  <span class="span">$299.00</span>
+                </div>
+                <h3>
+                  <a href="#" class="card-title">Classic Glasses</a>
+                </h3>
+                <div class="card-rating">
+                  <div class="rating-wrapper" aria-label="5 star rating">
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  </div>
+                  <p class="rating-text">38 reviews</p>
+                </div>
+              </div>
+            </div>
+          </li>
+    
+          <li class="scrollbar-item">
+            <div class="shop-card">
+              <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                <img src="./assets/images/glasses-02.png" width="540" height="720" loading="lazy" alt="Sports Glasses" class="img-cover">
+                <div class="card-actions">
+                  <button class="action-btn" aria-label="add to cart">
+                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                  <button class="action-btn" aria-label="add to wishlist">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                  <button class="action-btn" aria-label="compare">
+                    <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+              </div>
+    
+              <div class="card-content">
+                <div class="price">
+                  <span class="span">$449.00</span>
+                </div>
+                <h3>
+                  <a href="#" class="card-title">Sports Glasses</a>
+                </h3>
+                <div class="card-rating">
+                  <div class="rating-wrapper" aria-label="5 star rating">
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  </div>
+                  <p class="rating-text">25 reviews</p>
+                </div>
+              </div>
+            </div>
+          </li>
+    
+          <li class="scrollbar-item">
+            <div class="shop-card">
+              <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                <img src="./assets/images/glasses-03.png" width="540" height="720" loading="lazy" alt="Sunglasses" class="img-cover">
+                <div class="card-actions">
+                  <button class="action-btn" aria-label="add to cart">
+                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                  <button class="action-btn" aria-label="add to wishlist">
+                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                  <button class="action-btn" aria-label="compare">
+                    <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+              </div>
+    
+              <div class="card-content">
+                <div class="price">
+                  <span class="span">$499.00</span>
+                </div>
+                <h3>
+                  <a href="#" class="card-title">Sunglasses</a>
+                </h3>
+                <div class="card-rating">
+                  <div class="rating-wrapper" aria-label="5 star rating">
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  </div>
+                  <p class="rating-text">18 reviews</p>
+                </div>
+              </div>
+            </div>
+          </li>
+    
+        </ul>
+      </div>
+    </section>
+    
 
     <!-- 
         - custom js link
