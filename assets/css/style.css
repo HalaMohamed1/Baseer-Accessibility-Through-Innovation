@@ -331,6 +331,17 @@ body {
   border-radius: var(--radius-3);
 }
 
+.flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.w-100 { width: 100%; }
+
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -685,6 +696,18 @@ body {
 \*-----------------------------------*/
 
 
+.feature { text-align: center; }
+
+.feature .section-title { margin-block-end: 40px; }
+
+.feature-card .card-icon {
+  width: 100px;
+  margin-inline: auto;
+}
+
+.feature-card .card-title { margin-block: 35px 15px; }
+
+.feature-card .card-text { font-size: var(--fs-7); }
 
 
 
@@ -693,8 +716,54 @@ body {
 \*-----------------------------------*/
 
 
+.offer-banner {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  align-items: center;
+  gap: 30px;
+  margin-block-end: 60px;
+}
 
+.offer-subtitle {
+  font-size: var(--fs-7);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
+.offer-subtitle .span {
+  color: var(--black);
+  text-transform: uppercase;
+  font-weight: var(--fw-600);
+  letter-spacing: 2px;
+}
+
+.offer .badge { font-weight: var(--fw-500); }
+
+.offer .section-title { margin-block: 20px 8px; }
+
+.offer .section-text { font-size: var(--fs-6); }
+
+.offer .countdown {
+  color: var(--hoockers-green);
+  font-size: var(--fs-2);
+  line-height: 1;
+  display: flex;
+  margin-block: 20px 40px;
+}
+
+.offer .time:not(:last-child)::after {
+  content: ":";
+  color: var(--gray-web);
+  font-size: 3rem;
+  font-weight: var(--fw-500);
+  margin-inline: 10px;
+}
+
+.offer .time {
+  display: flex;
+  align-items: center;
+}
 
 /*-----------------------------------*\
   #BLOG
