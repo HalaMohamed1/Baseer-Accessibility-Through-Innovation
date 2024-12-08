@@ -12,12 +12,6 @@
     <!-- custom css link -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- login page link -->
-    <link rel="Login-Page" href="./login.html">
-
-
-   
-
     <!-- 
         - google font link 
     -->
@@ -28,17 +22,11 @@
 
     <!-- 
         - Preload images
-        
     -->
-    <link rel="preload" as="image" href="./assets/images/logo.png">
-    <link rel="preload" as="image" href="./assets/images/hero-banner-1.png">
-    <link rel="preload" as="image" href="./assets/images/hero-banner-2.png">
-    <link rel="preload" as="image" href="./assets/images/hero-banner-3.png">
 
 
 </head>
 <body>
-  
 
     <!-- 
         - #HEADER
@@ -73,10 +61,6 @@
 
                 <div class="header-actions">
 
-                  <button class="header-action-btn" aria-label="Go to Login Page" onclick="location.href='login.html'">
-                    <ion-icon name="log-in-outline" aria-hidden="true"></ion-icon>
-                  </button>
-                  
                        <button class="header-action-btn" aria-label="user">
                            <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
                        </button>
@@ -108,7 +92,7 @@
                         </li>
 
                         <li>
-                            <a href="#shop" class="navbar-link has-after">Shop</a>
+                          <a href="shop.html" class="navbar-link has-after">Shop</a>
                         </li>
 
                         <li>
@@ -118,7 +102,9 @@
                         <li>
                             <a href="#blog" class="navbar-link has-after">Blog</a>
                         </li>
-
+                        <li>
+                          <a href="wishlist.html" class="navbar-link has-after">Wishlist</a>
+                        </li>
 
                     </ul>
                 </nav>
@@ -155,7 +141,10 @@
                   </li>
 
                   <li>
-                    <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
+                    <a href="shop.html" class="navbar-link">Shop</a>
+                  </li>
+                  <li>
+                    <a href="wishlist.html" class="navbar-link">Wishlist</a>
                   </li>
 
                   <li>
@@ -187,7 +176,7 @@
           <ul class="has-scrollbar">
 
             <li class="scrollbar-item">
-              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-1.png')">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-1.jpg')">
 
                 <div class="card-content">
 
@@ -211,7 +200,7 @@
 
             
             <li class="scrollbar-item">
-                <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-2.png')">
+                <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-2.jpg')">
   
                   <div class="card-content">
   
@@ -234,7 +223,7 @@
               </li>
 
               <li class="scrollbar-item">
-                <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-3.png')">
+                <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-3.jpg')">
   
                   <div class="card-content">
   
@@ -262,603 +251,7 @@
     </section>
   
   
-          <!-- 
-               - #COLLECTION
-          -->
 
-<section class="section collection" id="collection" aria-label="collection" data-section>
-  <div class="container">
-
-    <ul class="collection-list">
-
-      <li>
-        <div class="collection-card has-before hover:shine">
-
-          <h2 class="h2 card-title">Accessible Essentials</h2>
-
-          <p class="card-text">Affordable tools for everyday accessibility needs</p>
-
-          <a href="#" class="btn-link">
-            <span class="span">Explore Now</span>
-
-            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-          </a>
-
-          <div class="has-bg-image" style="background-image: url('./assets/images/collection-1.png')"></div>
-
-        </div>
-      </li>
-
-      <li>
-        <div class="collection-card has-before hover:shine">
-
-          <h2 class="h2 card-title">AI Navigation</h2>
-
-          <p class="card-text">Innovative solutions with AI-powered guidance</p>
-
-          <a href="#" class="btn-link">
-            <span class="span">Discover More</span>
-
-            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-          </a>
-
-          <div class="has-bg-image" style="background-image: url('./assets/images/collection-2.png')"></div>
-
-        </div>
-      </li>
-
-      <li>
-        <div class="collection-card has-before hover:shine">
-
-          <h2 class="h2 card-title">Premium Accessibility</h2>
-
-          <p class="card-text">High-end features for advanced accessibility needs</p>
-
-          <a href="#" class="btn-link">
-            <span class="span">Shop Now</span>
-
-            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-          </a>
-
-          <div class="has-bg-image" style="background-image: url('./assets/images/collection-3.png')"></div>
-
-        </div>
-      </li>
-
-    </ul>
-
-  </div>
-</section>
-
-   <!-- 
-        - Shop Section
-    -->
-
-    <section class="section shop" id="shop" aria-label="shop" data-section>
-      <div class="container">
-    
-        <div class="title-wrapper">
-          <h2 class="h2 section-title">Our Bestsellers</h2>
-    
-          <a href="#" class="btn-link">
-            <span class="span">Shop All Products</span>
-            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-          </a>
-        </div>
-    
-        <ul class="has-scrollbar">
-    
-          <li class="scrollbar-item">
-            <div class="shop-card">
-              <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                <img src="./assets/images/glasses-01.png" width="540" height="720" loading="lazy" alt="Classic Glasses" class="img-cover">
-                <span class="badge" aria-label="20% off">-20%</span>
-                <div class="card-actions">
-                  <button class="action-btn" aria-label="add to cart">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                  </button>
-                  <button class="action-btn" aria-label="add to wishlist">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </button>
-                  <button class="action-btn" aria-label="compare">
-                    <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                  </button>
-                </div>
-              </div>
-    
-              <div class="card-content">
-                <div class="price">
-                  <del class="del">$375.00</del>
-                  <span class="span">$299.00</span>
-                </div>
-                <h3>
-                  <a href="#" class="card-title">Classic Glasses</a>
-                </h3>
-                <div class="card-rating">
-                  <div class="rating-wrapper" aria-label="5 star rating">
-                    <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star" aria-hidden="true"></ion-icon>
-                  </div>
-                  <p class="rating-text">38 reviews</p>
-                </div>
-              </div>
-            </div>
-          </li>
-    
-          <li class="scrollbar-item">
-            <div class="shop-card">
-              <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                <img src="./assets/images/glasses-02.png" width="540" height="720" loading="lazy" alt="Sports Glasses" class="img-cover">
-                <div class="card-actions">
-                  <button class="action-btn" aria-label="add to cart">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                  </button>
-                  <button class="action-btn" aria-label="add to wishlist">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </button>
-                  <button class="action-btn" aria-label="compare">
-                    <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                  </button>
-                </div>
-              </div>
-    
-              <div class="card-content">
-                <div class="price">
-                  <span class="span">$449.00</span>
-                </div>
-                <h3>
-                  <a href="#" class="card-title">Sports Glasses</a>
-                </h3>
-                <div class="card-rating">
-                  <div class="rating-wrapper" aria-label="5 star rating">
-                    <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star" aria-hidden="true"></ion-icon>
-                  </div>
-                  <p class="rating-text">25 reviews</p>
-                </div>
-              </div>
-            </div>
-          </li>
-    
-          <li class="scrollbar-item">
-            <div class="shop-card">
-              <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                <img src="./assets/images/glasses-03.png" width="540" height="720" loading="lazy" alt="Sunglasses" class="img-cover">
-                <div class="card-actions">
-                  <button class="action-btn" aria-label="add to cart">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                  </button>
-                  <button class="action-btn" aria-label="add to wishlist">
-                    <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                  </button>
-                  <button class="action-btn" aria-label="compare">
-                    <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                  </button>
-                </div>
-              </div>
-    
-              <div class="card-content">
-                <div class="price">
-                  <span class="span">$499.00</span>
-                </div>
-                <h3>
-                  <a href="#" class="card-title">Sunglasses</a>
-                </h3>
-                <div class="card-rating">
-                  <div class="rating-wrapper" aria-label="5 star rating">
-                    <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    <ion-icon name="star" aria-hidden="true"></ion-icon>
-                  </div>
-                  <p class="rating-text">18 reviews</p>
-                </div>
-              </div>
-            </div>
-          </li>
-    
-        </ul>
-      </div>
-    </section>
-    
-
-    
-
-      <!-- 
-        - #BANNER
-      -->
-
-      <section class="section banner" aria-label="banner" data-section>
-        <div class="container">
-
-          <ul class="banner-list">
-
-            <li>
-              <div class="banner-card banner-card-1 has-before hover:shine">
-
-                <p class="card-subtitle">Accessible Innovations</p>
-
-                <h2 class="h2 card-title">Discover Our Inclusive Shopping Features</h2>
-
-                <a href="#" class="btn btn-secondary">Explore More</a>
-
-                <div class="has-bg-image" style="background-image: url('./assets/images/banner-1.png')"></div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="banner-card banner-card-2 has-before hover:shine">
-
-                <h2 class="h2 card-title">25% off Everything</h2>
-
-                <p class="card-text">
-                  Explore products designed for visually impaired users, with features that make shopping easier for everyone.
-                </p>
-
-                <a href="#" class="btn btn-secondary">Shop Now</a>
-
-                <div class="has-bg-image" style="background-image: url('./assets/images/banner-2.png')"></div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-      
-<!-- 
-  - #FEATURE
--->
-
-<section class="section feature" aria-label="feature" data-section>
-  <div class="container">
-
-    <h2 class="h2-large section-title">Why Choose Baseer?</h2>
-
-    <ul class="flex-list">
-
-      <li class="flex-item">
-        <div class="feature-card">
-
-          <img src="./assets/images/feature-1.png" width="204" height="236" loading="lazy" alt="Accessible Design"
-            class="card-icon">
-
-          <h3 class="h3 card-title">Accessible Design</h3>
-
-          <p class="card-text">
-            Baseer ensures visually impaired users can navigate seamlessly through its features using high-contrast themes and screen-reader support.
-          </p>
-
-        </div>
-      </li>
-
-      <li class="flex-item">
-        <div class="feature-card">
-
-          <img src="./assets/images/feature-2.png" width="204" height="236" loading="lazy" alt="Inclusive Products"
-            class="card-icon">
-
-          <h3 class="h3 card-title">Inclusive Products</h3>
-
-          <p class="card-text">
-            Our platform offers tools and products tailored for accessibility, ensuring ease of use for all users, regardless of ability.
-          </p>
-
-        </div>
-      </li>
-
-      <li class="flex-item">
-        <div class="feature-card">
-
-          <img src="./assets/images/feature-3.png" width="204" height="236" loading="lazy" alt="Commitment to Quality"
-            class="card-icon">
-
-          <h3 class="h3 card-title">Commitment to Quality</h3>
-
-          <p class="card-text">
-            At Baseer, we prioritize quality, ensuring all our products meet the highest accessibility standards for a seamless experience.
-          </p>
-
-        </div>
-      </li>
-
-    </ul>
-
-  </div>
-</section>
-
-
-<!-- 
-  - #OFFER
--->
-
-<section class="section offer" id="offer" aria-label="offer" data-section>
-  <div class="container">
-
-    <figure class="offer-banner">
-      <img src="./assets/images/offer-banner-1.png" width="305" height="408" loading="lazy" alt="assistive tools on offer"
-        class="w-100">
-
-      <img src="./assets/images/offer-banner-2.png" width="450" height="625" loading="lazy" alt="inclusive technology"
-        class="w-100">
-    </figure>
-
-    <div class="offer-content">
-
-      <p class="offer-subtitle">
-        <span class="span">Special Offer</span>
-
-        <span class="badge" aria-label="30% off">-30%</span>
-      </p>
-
-      <h2 class="h2-large section-title">Screen Reader Bundle</h2>
-
-      <p class="section-text">
-        Enhance your accessibility experience with our discounted screen reader tools and inclusive tech solutions.
-      </p>
-
-      <div class="countdown">
-
-        <span class="time" aria-label="days">10</span>
-        <span class="time" aria-label="hours">12</span>
-        <span class="time" aria-label="minutes">30</span>
-        <span class="time" aria-label="seconds">45</span>
-
-      </div>
-
-      <a href="#" class="btn btn-primary">Get Only $29.99</a>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- 
-  - #BLOG
--->
-
-<section class="section blog" id="blog" aria-label="blog" data-section>
-  <div class="container">
-
-    <h2 class="h2-large section-title">Explore Accessibility</h2>
-
-    <ul class="flex-list">
-
-      <li class="flex-item">
-        <div class="blog-card">
-
-          <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
-            <img src="./assets/images/blog-1.jpeg" width="700" height="450" loading="lazy" alt="Find Accessible Products"
-              class="img-cover">
-          </figure>
-
-          <h3 class="h3">
-            <a href="#" class="card-title">Find Accessible Products</a>
-          </h3>
-
-          <a href="#" class="btn-link">
-            <span class="span">Learn More</span>
-
-            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-          </a>
-
-        </div>
-      </li>
-
-      <li class="flex-item">
-        <div class="blog-card">
-
-          <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
-            <img src="./assets/images/blog-2.jpeg" width="700" height="450" loading="lazy" alt="Accessibility Tips"
-              class="img-cover">
-          </figure>
-
-          <h3 class="h3">
-            <a href="#" class="card-title">Accessibility Tips</a>
-          </h3>
-
-          <a href="#" class="btn-link">
-            <span class="span">Read Now</span>
-
-            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-          </a>
-
-        </div>
-      </li>
-
-      <li class="flex-item">
-        <div class="blog-card">
-
-          <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
-            <img src="./assets/images/blog-3.jpg" width="700" height="450" loading="lazy" alt="Our Vision for Inclusivity"
-              class="img-cover">
-          </figure>
-
-          <h3 class="h3">
-            <a href="#" class="card-title">Our Vision for Inclusivity</a>
-          </h3>
-
-          <a href="#" class="btn-link">
-            <span class="span">Discover More</span>
-
-            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-          </a>
-
-        </div>
-      </li>
-
-    </ul>
-
-  </div>
-</section>
-
-<!-- 
-  - #FOOTER
--->
-
-<footer class="footer" data-section>
-  <div class="container">
-
-    <div class="footer-top">
-
-      <ul class="footer-list">
-
-        <li>
-          <p class="footer-list-title">About Baseer</p>
-        </li>
-
-        <li>
-          <p class="footer-list-text">
-            Empowering individuals with tools for a more accessible world. <a href="#" class="link">Our Vision</a>
-          </p>
-        </li>
-
-        <li>
-          <p class="footer-list-text bold">+1 (800) 123-4567</p>
-        </li>
-
-        <li>
-          <p class="footer-list-text">support@baseer.com</p>
-        </li>
-
-      </ul>
-
-      <ul class="footer-list">
-
-        <li>
-          <p class="footer-list-title">Quick Links</p>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Our Products</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Accessibility Resources</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Success Stories</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Partnerships</a>
-        </li>
-
-      </ul>
-
-      <ul class="footer-list">
-
-        <li>
-          <p class="footer-list-title">Support</p>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">FAQs</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Contact Us</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Shipping Information</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Terms of Use</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Privacy Policy</a>
-        </li>
-
-      </ul>
-
-      <div class="footer-list">
-
-        <p class="newsletter-title">Stay Connected</p>
-
-        <p class="newsletter-text">
-          Join our mailing list for the latest updates on accessibility innovations and Baseer news.
-        </p>
-
-        <form action="" class="newsletter-form">
-          <input type="email" name="email_address" placeholder="Enter your email address" required
-            class="email-field">
-
-          <button type="submit" class="btn btn-primary">Subscribe</button>
-        </form>
-
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-
-      <div class="wrapper">
-        <p class="copyright">
-          &copy; 2024 Baseer. All rights reserved.
-        </p>
-
-        <ul class="social-list">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-      </div>
-
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.png" width="179" height="26" loading="lazy" alt="Baseer">
-      </a>
-
-      <img src="./assets/images/pay.png" width="313" height="28" alt="Accepted payment methods" class="w-100">
-
-    </div>
-
-  </div>
-</footer>
-
-<!-- 
-  - #BACK TO TOP
--->
-
-<a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
-  <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
-</a>
 
 
     <!-- 
