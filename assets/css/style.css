@@ -101,6 +101,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 li {
@@ -1394,3 +1395,6 @@ body {
 
   .offer .container { gap: 120px; }
 }
+
+
+ 

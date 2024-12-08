@@ -12,6 +12,12 @@
     <!-- custom css link -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
+    <!-- login page link -->
+    <link rel="Login-Page" href="./login.html">
+
+
+   
+
     <!-- 
         - google font link 
     -->
@@ -32,6 +38,7 @@
 
 </head>
 <body>
+  
 
     <!-- 
         - #HEADER
@@ -66,6 +73,10 @@
 
                 <div class="header-actions">
 
+                  <button class="header-action-btn" aria-label="Go to Login Page" onclick="location.href='login.html'">
+                    <ion-icon name="log-in-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                  
                        <button class="header-action-btn" aria-label="user">
                            <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
                        </button>
@@ -107,6 +118,7 @@
                         <li>
                             <a href="#blog" class="navbar-link has-after">Blog</a>
                         </li>
+
 
                     </ul>
                 </nav>
