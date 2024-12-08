@@ -1,6 +1,14 @@
 'use strict';
 
+// Redirect to the cart page when the cart button is clicked
+document.getElementById("user_account").addEventListener("click", () => {
+  window.location.href = "login.html"; // Redirect to cart page
+});
 
+// Redirect to the cart page when the cart button is clicked
+document.getElementById("cart-button").addEventListener("click", () => {
+  window.location.href = "cart.html"; // Redirect to cart page
+});
 
 /**
  * add event on element
@@ -76,3 +84,47 @@ const headerSticky = function () {
 
 addEventOnElem(window, "scroll", headerSticky);
 
+
+
+/**
+ * scroll reveal effect
+ */
+
+const sections = document.querySelectorAll("[data-section]");
+
+const scrollReveal = function () {
+  for (let i = 0; i < sections.length; i++) {
+    if (sections[i].getBoundingClientRect().top < window.innerHeight / 2) {
+      sections[i].classList.add("active");
+    }
+  }
+}
+
+scrollReveal();
+
+addEventOnElem(window, "scroll", scrollReveal);
+
+/*** Log in and Sign Up Page*/
+
+const wrapper = document.querySelector('.wrapper');
+const loginLink = document.querySelector('.login-link');
+const registerLink = document.querySelector('.register-link');
+const btnPopup = document.querySelector('.btnlogin-popup');
+const iconClose = document.querySelector('.icon-close');
+
+
+registerLink.addEventListener('click', ()=> {
+    wrapper.classList.add('active');
+});
+
+loginLink.addEventListener('click', ()=> {
+    wrapper.classList.remove('active');
+});
+
+btnPopup.addEventListener('click', ()=> {
+    wrapper.classList.add('active-popup');
+});
+
+iconClose.addEventListener('click', ()=> {
+    wrapper.classList.remove('active-popup');
+});
